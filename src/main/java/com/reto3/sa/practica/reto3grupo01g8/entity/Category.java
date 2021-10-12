@@ -27,8 +27,8 @@ public class Category {
     @Id
     @GeneratedValue
     private int id;
-    private String nombre;
-    private String descripción;
+    private String name;
+    private String description;
     
 }
 

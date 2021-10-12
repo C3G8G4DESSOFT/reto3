@@ -46,8 +46,8 @@ public class CategoryService {
     
     public  Category updateCategory(Category category){
       Category existeCategory=repository.findById(category.getId()).orElse(null);
-      existeCategory.setNombre(category.getNombre());
-      existeCategory.setDescripción(category.getDescripción());
+      existeCategory.setName(category.getName());
+      existeCategory.setDescription(category.getDescription());
       return repository.save(existeCategory);
       
     }
